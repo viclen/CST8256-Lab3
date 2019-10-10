@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ACMasterPage.master.cs" Inherits="ACMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="position: relative; min-height: 100%;" >
+<head runat="server">
+    <title>Algonquin College</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="App_Themes/ACMasterPage_Theme/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="App_Themes/ACMasterPage_Theme/css/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding-top: 50px; margin-bottom: 60px;">
+
+    <div style="width: 70%;  margin: 20px; padding-bottom: 50px" class="container">
+        <form id="form1" runat="server">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" style="padding: 10px" href="http://www.algonquincollege.com">
+                  <img src="App_Themes/ACMasterPage_Theme/images/AC.png" 
+                       alt="Algonquin College" style="max-width:100%; max-height:100%;"/>
+              </a>    
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                    <li>
+                        <asp:LinkButton ID="btnHome" runat="server" class="active" CausesValidation="false">Home </asp:LinkButton>
+                    </li>
+                    <li>
+                        <asp:BulletedList ID="topMenu" DisplayMode="LinkButton" class="nav navbar-nav" CausesValidation="false" runat="server">
+                        </asp:BulletedList>
+                    </li>
+               </ul>
+            </div>
+          </div>  
+        </nav>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </form>
+    
+    <br />
+    </div>
+    <div style="height: 10px"></div>
+    <footer style="position: absolute; bottom: 0; width: 100%; height: 60px; background-color: darkgreen;">
+      <div class="container">
+        <p style="text-align: center; padding: 10px; color: white;">&copy; Algonquin College 2000 - 2016. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="Js/jquery-2.2.4.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+</body>
+</html>

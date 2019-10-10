@@ -1,0 +1,136 @@
+﻿body {
+    font: "Trebuchet MS", Verdana, sans-serif;
+    background-color: lightyellow;
+    color: #696969;
+}
+
+h1 {
+    font: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+}
+
+p {
+    font-size: 20px;
+}
+
+.description {
+    width: 370px;
+    height: 120px;
+    border: groove;
+    padding: 5px;
+    overflow-y: auto
+}
+
+legend {
+    padding: 0.2em 0.5em;
+    border: 1px solid green;
+    color: green;
+    font-size: 110%;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+}
+
+.emphsis {
+    font-weight: 900;
+}
+
+.Price {
+    width: 60px;
+    font-style: italic;
+    display: inline-block
+}
+
+.error {
+    color: red;
+}
+
+.validators {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+    .validators > .error {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+    }
+
+td {
+    padding: 10px;
+}
+
+.button {
+    border: 2px solid #f00;
+    border-style: ridge;
+    width: 7em;
+    background-color: lightgoldenrodyellow;
+}
+
+    .button:hover {
+        border: 2px solid #f00;
+        background: #eef;
+    }
+
+.input {
+    border: 2px solid #006;
+    border-style: groove;
+    background: #ffc;
+    width: 3em;
+    padding-left: 5px;
+}
+
+    .input:hover {
+        border: 2px solid #f00;
+        background: #ff6;
+    }
+
+.dropdown {
+    width: 384px;
+    height: 40px;
+    font-size: 16px;
+    border: groove;
+    background: #ffc;
+}
+
+    .dropdown:hover {
+        background: #ff6;
+    }
+
+.table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 20px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+    .table th {
+        font-size: 13px;
+        font-weight: normal;
+        padding: 8px;
+        background: #b9c9fe;
+        border-top: 4px solid #aabcfe;
+        border-bottom: 1px solid #fff;
+        color: #039;
+    }
+
+    .table td {
+        padding: 8px;
+        background: #e8edff;
+        border-bottom: 1px solid #fff;
+        color: #669;
+        border-top: 1px solid transparent;
+    }
+
+    .table tr:hover td {
+        background: #d0dafd;
+        color: #339;
+    }
